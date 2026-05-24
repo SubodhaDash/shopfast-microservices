@@ -1,0 +1,18 @@
+# Node
+node_modules/
+npm-debug.log
+
+# Python
+__pycache__/
+*.pyc
+.env
+venv/
+
+# Go
+*.exe
+*.out
+
+# General
+.DS_Store
+*.log
+EOF
