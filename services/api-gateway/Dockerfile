@@ -12,8 +12,8 @@ WORKDIR /app
 # Create a non-root user and switch to it
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 
-COPY --from=builder ./app/node_modules ./node_modules
-COPY src/ ./src/ 
+COPY --from=builder /app/node_modules ./node_modules
+COPY src/ ./src/
 
 USER appuser
 
